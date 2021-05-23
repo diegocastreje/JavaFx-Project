@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<VBox styleClass="VBoxLogin-Crono" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diego.temporizador.ControladorCronometro">
+   <children>
+      <ToolBar styleClass="toolbar" prefHeight="40.0" prefWidth="162.0">
+        <items>
+            <Pane prefHeight="30.0" prefWidth="134.0" />
+            <Button styleClass="botones" mnemonicParsing="false" onAction="#cargarTiempos" prefHeight="25.0" prefWidth="50.0">
+                     <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/volver.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         </Button>
+        </items>
+      </ToolBar>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="tiempo" prefHeight="50.0" prefWidth="90.0" text="0.00" textAlignment="CENTER">
+               <font>
+                  <Font size="47.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <HBox prefHeight="0.0" prefWidth="200.0">
+         <children>
+            <Button styleClass="botonIniciar" fx:id="inicio" mnemonicParsing="false" onAction="#iniciar" prefHeight="25.0" prefWidth="100.0" text="Iniciar" />
+            <Button styleClass="botonParar" mnemonicParsing="false" onAction="#parar" prefHeight="25.0" prefWidth="100.0" text="Parar" />
+         </children>
+      </HBox>
+      <Button styleClass="botonResetear" mnemonicParsing="false" onAction="#resetear" prefHeight="25.0" prefWidth="200.0" text="Resetear" />
+   </children>
+</VBox>

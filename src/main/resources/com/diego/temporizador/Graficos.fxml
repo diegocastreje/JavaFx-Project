@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diego.temporizador.ControladorGraficos">
+   <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="toolbar">
+      <items>
+          
+          <Button onAction="#cargarDatosEnElChart">
+              <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../../../img/refrescar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Button>
+         <Pane prefHeight="48.0" prefWidth="383.0" />
+         <Button onAction="#cargarTiempos" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../../../img/volver.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+         </Button>
+      </items>
+   </ToolBar>
+    <StackPane prefHeight="440.0" prefWidth="500.0">
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="440.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="media_3x3" text="Media 3x3: ">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="media_4x4" text="Media 4x4: ">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font></Label>
+                  
+                   <Label fx:id="media_megaminx" text="Media Megaminx: ">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+              <PieChart fx:id="chart" legendSide="BOTTOM" title="Tiempos por cubo" />
+         </children>
+      </HBox>
+    </StackPane>
+</VBox>

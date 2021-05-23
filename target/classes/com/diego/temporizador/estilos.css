@@ -1,0 +1,78 @@
+VBoxLogin-Crono{
+    -fx-background-color: #d3e0ea;
+}
+.toolbar{
+    -fx-background-color: #276678;
+}
+
+.texto{
+    -fx-background-color: #d3e0ea;
+}
+
+.entrar{
+    -fx-background-color: #1687a7;
+    -fx-padding: 4;
+}
+
+.entrar:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border;
+    -fx-color: -fx-hover-base;
+}
+
+.add{
+    -fx-background-color: #276678;
+    -fx-padding: 4;
+}
+
+.add:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border;
+    -fx-color: -fx-hover-base;
+}
+
+.cronometro{
+    -fx-background-color: #d3e0ea;
+    -fx-padding: 4;
+}
+
+.cronometro:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border;
+    -fx-color: -fx-hover-base;
+}
+.botones{
+    -fx-background-color: transparent;
+}
+.botonIniciar{
+    -fx-background-color: #17b67c;
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+.botonParar{
+    -fx-background-color: #bc2020;
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+.botonResetear{
+    -fx-background-color: #1687a7;
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+.table-row-cell:odd {
+    -fx-background-color:#f8f1f1;
+}
+
+.table-row-cell:even {
+    -fx-background-color:#a3ddcb;
+}
+
+.table-row-cell:focused {
+    -fx-background-color:#5eaaa8;
+}
